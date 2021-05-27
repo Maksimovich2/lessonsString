@@ -9,7 +9,7 @@ public class ContactString {
         if(!str1.isEmpty() && !str2.isEmpty()) {
             str1 = str1.concat(str2);
             System.out.println(str1);
-            System.out.println("success!");
+            System.out.println("соединение успешно!");
         }
         else {
             throw new IllegalArgumentException("some of the lines are empty.");
