@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ContactString {
     public String contact(String str1, String str2){
-        if(!str1.isEmpty() && !str2.isEmpty()) {
+        if(str1 != null  && str2 != null ) {
             str1 = str1.concat(str2);
             System.out.println(str1);
             System.out.println("соединение успешно!");
@@ -14,14 +14,16 @@ public class ContactString {
         else {
             throw new IllegalArgumentException("some of the lines are empty.");
         }
+
         return str1;
     }
 
     public String equals(String str1, String str2){
-        String equal;
+        String equal = "strings are not equal!";
         Date date = new Date();
-        if(str1.length() == str2.length()){
-            equal = "Строки равны!";
+        if(str1 != null  && str2 != null ) {
+            if (str1.length() == str2.length())
+                equal = "strings are equal!";
             System.out.println(equal);
         }
         else{
@@ -31,8 +33,9 @@ public class ContactString {
        return equal;
     }
 
+
     public void countSymbols(String str1) {
-        if (!str1.isEmpty()) {
+        if (str1!=null) {
             System.out.println(str1.replace(" ", "").length());
         }
         else {
