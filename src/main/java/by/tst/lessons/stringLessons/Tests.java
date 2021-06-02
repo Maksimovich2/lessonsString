@@ -1,5 +1,6 @@
 package by.tst.lessons.stringLessons;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Tests {
@@ -13,6 +14,7 @@ public class Tests {
         test.countSymbols(str1);
         test.equals(str1, str2);
         test.contact(str1, str2);
+        LocalDate today = LocalDate.now();
     }
 
 
